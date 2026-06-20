@@ -1,15 +1,55 @@
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a80000, #ff4b00);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 5px;
+}
+
+.login-box p {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    text-align: left;
     margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .btn-ingresar,
-.btn-registrar {
+.btn-registrar,
+.btn-nuevo {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -23,49 +63,6 @@ button {
     background: #6c757d;
 }
 
-.usuarios-body {
-    background: #f4f4f4;
-    display: block;
-    padding: 60px;
-    height: auto;
-}
-
-.tabla-box {
-    width: 80%;
-    margin: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-th {
-    background: #212529;
-    color: white;
-    padding: 12px;
-}
-
-td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.btn-editar {
-    background: #ffc107;
-    color: black;
-    padding: 8px;
-}
-
-.btn-eliminar {
-    background: #dc3545;
-    padding: 8px;
-}
-
-.btn-salir {
-    background: #6c757d;
-    padding: 10px;
-    margin-top: 15px;
+.btn-nuevo {
+    background: #198754;
 }
