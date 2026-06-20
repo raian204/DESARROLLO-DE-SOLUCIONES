@@ -13,19 +13,29 @@
         <p>Inicio de sesión</p>
 
         <label>Usuario</label>
-        <input type="text" placeholder="Ingrese usuario">
+        <input type="text" id="usuario" placeholder="Ingrese usuario">
 
         <label>Contraseña</label>
-        <input type="password" placeholder="Ingrese contraseña">
+        <input type="password" id="password" placeholder="Ingrese contraseña">
 
-        <a href="usuarios.html">
-            <button class="btn-ingresar">Ingresar</button>
-        </a>
-
+        <button class="btn-ingresar" onclick="login()">Ingresar</button>
         <button class="btn-registrar">Registrar</button>
     </div>
 
     <!-- Cambio realizado en la rama feature/login -->
+
+    <script>
+        function login() {
+            let usuario = document.getElementById("usuario").value;
+            let password = document.getElementById("password").value;
+
+            if (usuario === "admin" && password === "123") {
+                window.location.href = "usuarios.html";
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
 
 </body>
 </html>
