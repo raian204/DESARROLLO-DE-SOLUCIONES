@@ -21,6 +21,14 @@
         <button class="btn-ingresar">Ingresar</button>
         <button class="btn-registrar">Registrar</button>
     </div>
-
+<script>
+    function login(){
+        const usurio = document.querySelector('input[type="text"]').value;
+        const password = document.querySelector('input[type="password"]').value;
+        if(usurio === "admin" && password === "admin"){
+            alert("Bienvenido al sistema");
+     }
+  }
+</script>
 </body>
 </html>
