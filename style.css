@@ -52,6 +52,7 @@ button {
 
 .btn-ingresar,
 .btn-registrar,
+.btn-nuevo,
 .btn-nombre {
     width: 100%;
     padding: 10px;
@@ -64,6 +65,10 @@ button {
 
 .btn-registrar {
     background: #6c757d;
+}
+
+.btn-nuevo {
+    background: #198754;
 }
 
 .btn-nombre {
@@ -109,12 +114,6 @@ button {
 
 .tabla-usuarios tr:hover {
     background: #f5f5f5;
-}
-
-.btn-nuevo {
-    background: #198754;
-    padding: 10px 15px;
-    margin-bottom: 15px;
 }
 
 .btn-editar {
